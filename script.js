@@ -33,6 +33,8 @@ const listGuests = function(guests) {
       <section class = "likes">Likes:
         <ul></ul>
       </section>
+
+    
     `
     const likesHtml = guestHtml.querySelector(".likes>ul");
     guest.likes.forEach(
