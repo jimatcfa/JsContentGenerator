@@ -24,8 +24,8 @@ let guests = [
     name: "Viola",
     age: 56,
     likes: ["lasagne", "hummus"],
-    hates: ["pasta"],
-    allergicTo: []
+    hates: ["eggplant", "cheese"],
+    allergicTo: ["milk", "gluten"]
   },
 ]
 
