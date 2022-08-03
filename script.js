@@ -1,51 +1,35 @@
 let guests = [
   {
-    name: "Jim",
-    age: 25,
+    name: "Scarlett",
+    age: 37,
     likes: ["corn", "chicken"],
     hates: ["diet soda"],
     allergicTo: ["eggs"]
   },
   {
-    name: "Steve",
-    age: 27,
+    name: "Samuel",
+    age: 73,
     likes: ["potatoes", "pancakes"],
     hates: ["liver"],
     allergicTo: ["milk"]
   },
   {
-    name: "Russell",
-    age: 23,
-    likes: ["hamburgers"],
-    hates: ["mushrooas"],
+    name: "Dwayne",
+    age: 50,
+    likes: ["chicken breast", "cod"],
+    hates: ["pasta"],
+    allergicTo: []
+  },
+  {
+    name: "Viola",
+    age: 56,
+    likes: ["lasagne", "hummus"],
+    hates: ["pasta"],
     allergicTo: []
   },
 ]
 
 const listGuests = function(guests) {
-  const guestList = document.querySelector("#guestList");
-  guests.forEach(function(guest) {
-    const guestHtml = document.createElement("section");
-    guestHtml.classList.add("guest");
-    guestHtml.innerHTML = `
-      <h1>${guest.name}</h1>
-      <p>${guest.age} years old</p>
-      <section class = "likes">Likes:
-        <ul></ul>
-      </section>
-    `
-    const likesHtml = guestHtml.querySelector(".likes>ul");
-    guest.likes.forEach(
-      function(item) {
-        const likesItem = document.createElement("li");
-        const itemText = document.createTextNode(item);
-        likesItem.appendChild(itemText);
-        likesHtml.appendChild(likesItem);
-      }
-    )
-    guestList.appendChild(guestHtml);
-  }
-  )
 
 }
 
